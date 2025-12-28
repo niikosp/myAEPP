@@ -22,6 +22,6 @@ This project was developed using a modern AI-assisted workflow.
 <ol>
 <li>Logic & Backend: Leveraged AI tools (like Gemini/ChatGPT) to generate and optimize Kotlin components, focusing on rapid prototyping and clean code structures.</li>
 
-<li>Frontend & UI: Personally designed and implemented the UI using HTML/CSS/XML to ensure a custom user experience tailored to the student's needs.</li>
+<li>Frontend & UI: Personally designed and implemented the UI using HTML to ensure a custom user experience tailored to the student's needs.</li>
 
 <li>Curation: All educational content and curriculum logic were manually structured to align with the official Greek Ministry of Education (ΑΕΠΠ) standards.</li>
