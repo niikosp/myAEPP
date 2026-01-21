@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Serial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Σειριακή αναζήτηση</h1>
+
+<h4>Αρχικά θα δούμε τη σειριακή αναζήτηση σε μονοδιάστατο πίνακα:</h4>
+
+<p style ="color : green;">! Αναζήτηση στοιχείου key σε μονοδιάστατο πίνακα ΠΙΝΑΚΑΣ[30]</p>
+<p style ="color : green;">! 1η περίπτωση: Μας ενδιαφέρει να βρούμε το στοιχείο μία φορά</p>
+
+<p>i <- 1</p>
+<p>ΒΡΕΘΗΚΕ <- ΨΕΥΔΗΣ</p>
+<p>ΘΕΣΗ <- 0</p>
+<p>ΟΣΟ (i<=30) ΚΑΙ (ΒΡΕΘΗΚΕ =ΨΕΥΔΗΣ) ΕΠΑΝΑΛΑΒΕ</p>
+<p style="margin-left: 40px;">ΑΝ ΠΙΝΑΚΑΣ[i] = key ΤΟΤΕ</p>
+<p style="margin-left: 60px;">ΘΕΣΗ <- i</p>
+<p style="margin-left: 60px;">ΓΡΑΨΕ "ΒΡΕΘΗΚΕ ΣΤΗ ΘΕΣΗ: ", i</p>
+<p style="margin-left: 60px;">ΒΡΕΘΗΚΕ <- ΑΛΗΘΗΣ</p>
+<p style="margin-left: 40px;">ΑΛΛΙΩΣ</p>
+<p style="margin-left: 60px;">i <- i+1</p>
+<p style="margin-left: 60px;">ΤΕΛΟΣ_ΑΝ</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+
+<p style ="color : green;">! 2η περίπτωση: Μας ενδιαφέρει να βρούμε πόσες φορές υπάρχει το στοιχείο</p>
+
+<p>ΠΛΗΘΟΣ <- 0</p>
+<p>ΓΙΑ i ΑΠΟ 1 ΜΕΧΡΙ 30</p>
+<p style="margin-left: 40px;">ΑΝ ΠΙΝΑΚΑΣ[i] = key ΤΟΤΕ</p>
+<p style="margin-left: 60px;">ΠΛΗΘΟΣ <- ΠΛΗΘΟΣ+1</p>
+<p style="margin-left: 60px;">ΓΡΑΨΕ "ΒΡΕΘΗΚΕ ΣΤΗ ΘΕΣΗ: ", i</p>
+<p style="margin-left: 40px;">ΤΕΛΟΣ_ΑΝ</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p>ΓΡΑΨΕ "ΤΟ ΣΤΟΙΧΕΙΟ key ΒΡΕΘΗΚΕ ΣΕ ", ΠΛΗΘΟΣ, "ΘΕΣΕΙΣ"</p>
+
+<h4>Ας δούμε τώρα τη σειριακή αναζήτηση σε δισδιάστατο πίνακα</h4>
+
+<p style ="color : green;">! Αναζήτηση στοιχείου key σε δισδιάστατο πίνακα ΠΙΝΑΚΑΣ[30,50]</p>
+<p style ="color : green;">! 1η περίπτωση: Μας ενδιαφέρει να βρούμε το στοιχείο μία φορά</p>
+
+<p>ΒΡΕΘΗΚΕ <- ΨΕΥΔΗΣ</p>
+<p>i <- 1</p>
+<p>ΟΣΟ i<=30 ΚΑΙ ΒΡΕΘΗΚΕ=ΨΕΥΔΗΣ ΕΠΑΝΑΛΑΒΕ</p>
+<p style="margin-left: 40px;">J <- 1</p>
+<p style="margin-left: 40px;">ΟΣΟ j<=50 ΚΑΙ ΒΡΕΘΗΚΕ=ΨΕΥΔΗΣ ΕΠΑΝΑΛΑΒΕ</p>
+<p style="margin-left: 60px;">ΑΝ ΠΙΝΑΚΑΣ[i,j] = key ΤΟΤΕ</p>
+<p style="margin-left: 80px;">ΓΡΑΨΕ "ΒΡΕΘΗΚΕ ΣΤΗ ΘΕΣΗ: ", i,j</p>
+<p style="margin-left: 80px;">ΒΡΕΘΗΚΕ <- ΑΛΗΘΗΣ</p>
+<p style="margin-left: 60px;">ΤΕΛΟΣ_ΑΝ</p>
+<p style="margin-left: 60px;">j <- j+1</p>
+<p style="margin-left: 40px;">ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p style="margin-left: 40px;">i <- i+1</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+
+<p style ="color : green;">! 2η περίπτωση: Μας ενδιαφέρει να βρούμε πόσες φορές υπάρχει το στοιχείο</p>
+
+<p>ΠΛΗΘΟΣ <- 0</p>
+<p>ΓΙΑ i ΑΠΟ 1 ΜΕΧΡΙ 30</p>
+<p style="margin-left: 40px;">ΓΙΑ j ΑΠΟ 1 ΜΕΧΡΙ 50</p>
+<p style="margin-left: 60px;">ΑΝ ΠΙΝΑΚΑΣ[i,j]=key ΤΟΤΕ</p>
+<p style="margin-left: 80px;">ΓΡΑΨΕ "ΒΡΕΘΗΚΕ ΣΤΗ ΘΕΣΗ: ", i,j</p>
+<p style="margin-left: 80px;">ΠΛΗΘΟΣ <- ΠΛΗΘΟΣ +1</p>
+<p style="margin-left: 60px;">ΤΕΛΟΣ_ΑΝ</p>
+<p style="margin-left: 40px;">ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p>ΑΝ ΠΛΗΘΟΣ=0 ΤΟΤΕ ΓΡΑΨΕ "ΔΕΝ ΒΡΕΘΗΚΕ ΠΟΥΘΕΝΑ ΤΟ ΣΤΟΙΧΕΙΟ"</p>
+
+
+<img src="images/search.jpg" alt="Αναζήτηση" style="max-width: 100%; height: auto; display: block; margin: 16px auto;"/>
+
+
+
+</body>
+</html>

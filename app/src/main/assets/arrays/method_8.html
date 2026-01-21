@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Τετραγωνικοί Πίνακες</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Τετραγωνικοί πίνακες</h1>
+
+<p><b>Ορισμός: Τετραγωνικός πίνακας</b> είναι ένας δισδιάστατος πίνακας με ίσο μέγεθος διαστάσεων και γενικά συμβολίζεται ως πίνακας NxN.</p>
+
+<img src="images/square1.jpg" alt="Αναζήτηση" style="max-width: 100%; height: auto; display: block; margin: 16px auto;"/>
+
+<p></p>
+<h4>Ας δούμε ένα ένα παράδειγμα στο οποίο κατασκευάζουμε τον παρακάτω πίνακα: </h4>
+
+<img src="images/square2.jpg" alt="Αναζήτηση" style="max-width: 100%; height: auto; display: block; margin: 16px auto;"/>
+
+<p>Παρατηρούμε ότι στην κύρια διαγώνιο του υπάρχουν πολλαπλάσια του 10 έως και το 50.</p>
+<p>Στα υπόλοιπα κελιά υπάρχουν διαδοχικοί αριθμοί από το 1 έως το 20.</p>
+
+<h4>Ο αλγόριθμός μας: </h4>
+<p></p>
+
+<p>Κ <- 10</p>
+<p>Λ <- 1</p>
+<p>ΓΙΑ i ΑΠΟ 1 ΜΕΧΡΙ 5</p>
+<p style="margin-left: 40px;">ΓΙΑ j ΑΠΟ 1 ΜΕΧΡΙ 5</p>
+<p style="margin-left: 60px;">ΑΝ i=j ΤΟΤΕ</p>
+<p style="margin-left: 80px;">Α[i,j] <- Κ</p>
+<p style="margin-left: 80px;">Κ <- Κ+10</p>
+<p style="margin-left: 60px;">ΑΛΛΙΩΣ</p>
+<p style="margin-left: 80px;">Α[i,j] <- Λ</p>
+<p style="margin-left: 80px;">Λ <- Λ+1</p>
+<p style="margin-left: 60px;">ΤΕΛΟΣ_ΑΝ</p>
+<p style="margin-left: 40px;">ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>

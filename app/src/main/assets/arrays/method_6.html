@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merging arrays</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Συγχώνευση πινάκων</h1>
+
+<h4>Απλή συγχώνευση</h4>
+
+<img src="images/merge_arrays.jpg" alt="Συγχώνευση" style="max-width: 100%; height: auto; display: block; margin: 16px auto;"/>
+
+<p>ΓΙΑ i ΑΠΟ 1 ΜΕΧΡΙ 20</p>
+<p style ="margin-left: 40px;">Γ[i] <- A[i]</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p>ΓΙΑ i ΑΠΟ 21 ΜΕΧΡΙ 50</p>
+<p style ="margin-left: 40px;">Γ[i] <- B[i-20]</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+
+<h4>Διαχωρισμός</h4>
+
+<img src="images/demerge.jpg" alt="Διαχωρισμός" style="max-width: 100%; height: auto; display: block; margin: 16px auto;"/>
+
+<p>ΓΙΑ i ΑΠΟ 1 ΜΕΧΡΙ 20</p>
+<p style ="margin-left: 40px;">Β[i] <- A[i]</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p>ΓΙΑ i ΑΠΟ 1 ΜΕΧΡΙ 30</p>
+<p style ="margin-left: 40px;">Γ[i] <- A[20 + i]</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+
+
+<h4>Συγχώνευση ταξινομημένων πινάκων</h4>
+
+<img src="images/merge_sorted.jpg" alt="Συγχώνευση ταξινομημένων πινάκων" style="max-width: 100%; height: auto; display: block; margin: 16px auto;"/>
+
+<p>i <- 1</p>
+<p>j <- 1</p>
+<p>k <- 1</p>
+<p>ΟΣΟ i<=N ΚΑΙ j<=M ΕΠΑΝΑΛΑΒΕ</p>
+<p style ="margin-left: 40px;">ΑΝ Α[i] < B[j] ΤΟΤΕ</p>
+<p style ="margin-left: 60px;">Γ[k] <- A[i]</p>
+<p style ="margin-left: 60px;">i <- i+1</p>
+<p style ="margin-left: 40px;">ΑΛΛΙΩΣ</p>
+<p style ="margin-left: 60px;">Γ[k] <- Β[j]</p>
+<p style ="margin-left: 60px;">j <- j+1</p>
+<p style ="margin-left: 40px;">ΤΕΛΟΣ_ΑΝ</p>
+<p style ="margin-left: 40px;">k <- k+1</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p style ="color: green;">! Τελείωσαν τα στοιχεία του πίνακα Α;</p>
+<p>ΑΝ i>N ΤΟΤΕ</p>
+<p style ="margin-left: 40px;">ΟΣΟ j<=M ΕΠΑΝΑΛΑΒΕ</p>
+<p style ="margin-left: 60px;">Γ[k] <- B[j]</p>
+<p style ="margin-left: 60px;">j <- j+1</p>
+<p style ="margin-left: 60px;">k <- k+1</p>
+<p style ="margin-left: 40px;">ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p>ΑΛΛΙΩΣ</p>
+<p style ="margin-left: 40px;">ΟΣΟ j<=Ν ΕΠΑΝΑΛΑΒΕ</p>
+<p style ="margin-left: 60px;">Γ[k] <- Α[i]</p>
+<p style ="margin-left: 60px;">i <- i+1</p>
+<p style ="margin-left: 60px;">k <- k+1</p>
+<p style ="margin-left: 40px;">ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p>ΤΕΛΟΣ_ΑΝ</p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
