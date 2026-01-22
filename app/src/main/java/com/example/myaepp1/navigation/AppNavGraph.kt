@@ -146,6 +146,9 @@ fun AppNavGraph() {
                 "supplement_extras_trees" -> "extras_trees.html"
                 "supplement_extras_graphs" -> "extras_graphs.html"
                 "supplement_extras_select" -> "extras_select.html"
+                "supplement_extras_modular" -> "extras_modular.html"
+                "supplement_extras_error_categories" -> "extras_error_categories.html"
+
 
 
 

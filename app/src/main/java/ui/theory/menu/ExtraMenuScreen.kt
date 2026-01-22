@@ -18,7 +18,9 @@ fun ExtrasMenuScreen(
         "lists" to "Λίστες",
         "trees" to "Δένδρα",
         "graphs" to "Γράφοι",
-        "select" to "Επίλεξε"
+        "select" to "Επίλεξε",
+        "modular" to "Τμηματικός Προγραμματισμός",
+        "error_categories" to "Κατηγορίες Λαθών"
     )
 
     Scaffold(
