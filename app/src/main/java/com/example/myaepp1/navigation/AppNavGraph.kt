@@ -13,6 +13,8 @@ import com.example.myaepp1.ui.arrays.ArraysMenuScreen
 import com.example.myaepp1.ui.arrays.ArraysTheoryScreen
 import com.example.myaepp1.ui.theory.menu.ExtrasMenuScreen
 import com.example.myaepp1.ui.truefalse.TrueFalseScreen
+import com.example.myaepp1.ui.flashcards.FlashcardsScreen
+
 
 
 
@@ -46,7 +48,8 @@ fun AppNavGraph() {
                 onTheoryClick = { navController.navigate("theory_menu") },
                 onArraysClick = { navController.navigate("arrays_menu") },
                 onCreatorClick = { navController.navigate("from_creator") },
-                onTrueFalseClick = { navController.navigate("true_false") }
+                onTrueFalseClick = { navController.navigate("true_false") },
+                onFlashcardsClick = { navController.navigate("flashcards") }
             )
 
         }
@@ -86,6 +89,13 @@ fun AppNavGraph() {
                 onBackClick = { navController.popBackStack() }
             )
         }
+
+        composable("flashcards") {
+            FlashcardsScreen(
+                onExit = { navController.popBackStack() }
+            )
+        }
+
 
         composable("supplement_menu") {
             SupplementMenuScreen(

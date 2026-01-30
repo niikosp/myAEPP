@@ -12,7 +12,9 @@ fun HomeScreen(
     onTheoryClick: () -> Unit,
     onArraysClick: () -> Unit,
     onCreatorClick: () -> Unit,
-    onTrueFalseClick: () -> Unit
+    onTrueFalseClick: () -> Unit,
+    onFlashcardsClick: () -> Unit
+
 ) {
     Column(
         modifier = Modifier
@@ -34,11 +36,12 @@ fun HomeScreen(
         }
 
         Button(
-            onClick = { },
+            onClick = { onFlashcardsClick() },
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Flashcards θεωρίας")
         }
+
 
         Button(
             onClick = { onTrueFalseClick() },
@@ -46,6 +49,7 @@ fun HomeScreen(
         ) {
             Text("Σ-Λ Πανελληνίων")
         }
+
 
 
 

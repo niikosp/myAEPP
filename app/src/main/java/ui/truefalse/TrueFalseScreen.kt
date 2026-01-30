@@ -35,7 +35,7 @@ fun TrueFalseScreen(
     ) { padding ->
 
         if (currentQuestion == null) {
-            // ✅ FINAL SCORE SCREEN
+
             Column(
                 modifier = Modifier
                     .fillMaxSize()
