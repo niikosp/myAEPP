@@ -11,7 +11,8 @@ import androidx.compose.ui.unit.dp
 fun HomeScreen(
     onTheoryClick: () -> Unit,
     onArraysClick: () -> Unit,
-    onCreatorClick: () -> Unit
+    onCreatorClick: () -> Unit,
+    onTrueFalseClick: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -40,11 +41,14 @@ fun HomeScreen(
         }
 
         Button(
-            onClick = { },
+            onClick = { onTrueFalseClick() },
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Σ-Λ Πανελληνίων")
         }
+
+
+
 
         Button(
             onClick = { onArraysClick()},
@@ -56,5 +60,7 @@ fun HomeScreen(
         Button(onClick = { onCreatorClick() }, modifier = Modifier.fillMaxWidth()) {
             Text("Από τον Δημιουργό")
         }
+
     }
+
 }

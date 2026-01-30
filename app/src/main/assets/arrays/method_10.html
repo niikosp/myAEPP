@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insertion sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Ταξινόμηση ευθείας εισαγωγής - Insertion sort</h1>
+
+<p>Η ταξινόμηση ευθείας εισαγωγής (insertion sort) είναι ένας απλός αλγόριθμος που ταξινομεί δεδομένα παίρνοντας ένα-ένα τα στοιχεία και τοποθετώντας τα στην κατάλληλη θέση μέσα σε μια ήδη ταξινομημένη υπολίστα, ξεκινώντας από το δεύτερο στοιχείο.</p>
+
+<h4>Εφαρμογή</h4>
+<p>Ταξινομούμε σε αύξουσα σειρά τα στοιχεία ενός πίνακα A με n στοιχεία.</p>
+
+<p>ΓΙΑ i ΑΠΟ 2 ΜΕΧΡΙ n</p>
+<p style ="margin-left:40px;">temp <- A[i]</p>
+<p style ="margin-left:40px;">j <- i-1</p>
+<p style ="margin-left:40px;">ΟΣΟ temp < A[j] ΚΑΙ j>0 ΕΠΑΝΑΛΑΒΕ</p>
+<p style ="margin-left:60px;">A[j+1] <- A[j]</p>
+<p style ="margin-left:60px;">j <- j-1</p>
+<p style ="margin-left:40px;">ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+<p style ="margin-left:40px;">A[j+1] <- temp</p>
+<p>ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ</p>
+
+
+</body>
+</html>

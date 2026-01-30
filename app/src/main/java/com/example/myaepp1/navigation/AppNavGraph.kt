@@ -12,6 +12,8 @@ import com.example.myaepp1.ui.theory.menu.SupplementMenuScreen
 import com.example.myaepp1.ui.arrays.ArraysMenuScreen
 import com.example.myaepp1.ui.arrays.ArraysTheoryScreen
 import com.example.myaepp1.ui.theory.menu.ExtrasMenuScreen
+import com.example.myaepp1.ui.truefalse.TrueFalseScreen
+
 
 
 
@@ -41,16 +43,12 @@ fun AppNavGraph() {
 
         composable("home") {
             HomeScreen(
-                onTheoryClick = {
-                    navController.navigate("theory_menu")
-                },
-                onArraysClick = {
-                    navController.navigate("arrays_menu")
-                },
-                onCreatorClick = {
-                    navController.navigate("from_creator")
-                }
+                onTheoryClick = { navController.navigate("theory_menu") },
+                onArraysClick = { navController.navigate("arrays_menu") },
+                onCreatorClick = { navController.navigate("from_creator") },
+                onTrueFalseClick = { navController.navigate("true_false") }
             )
+
         }
 
 
@@ -104,8 +102,7 @@ fun AppNavGraph() {
         composable("supplement_extras_menu") {
             ExtrasMenuScreen(
                 onExtraClick = { extraId ->
-                    // For now we’ll route to theory_content as placeholders.
-                    // Later you can map each one to its own HTML file.
+
                     navController.navigate("theory_content/supplement_extras_$extraId")
                 },
                 onBackClick = { navController.popBackStack() }
@@ -117,6 +114,11 @@ fun AppNavGraph() {
                 title = "Από τον Δημιουργό",
                 assetFileName = "from_creator.html",
                 onBackClick = { navController.popBackStack() }
+            )
+        }
+        composable("true_false") {
+            TrueFalseScreen(
+                onExit = { navController.popBackStack() }
             )
         }
 
@@ -154,6 +156,8 @@ fun AppNavGraph() {
 
                 else -> "chapter1.html"
             }
+
+
 
 
 
