@@ -2,23 +2,21 @@ package com.example.myaepp1.ui.flashcards
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.myaepp1.ui.common.MyTopBar
-import androidx.compose.foundation.verticalScroll
-import androidx.compose.foundation.rememberScrollState
-
 
 @Composable
 fun FlashcardsScreen(
     onExit: () -> Unit
 ) {
-    val cards = remember {
-        flashcards.shuffled()
-    }
+    // Shuffle once per session
+    val cards = remember { flashcards.shuffled() }
 
     var index by remember { mutableStateOf(0) }
     var isFlipped by remember { mutableStateOf(false) }
@@ -35,6 +33,7 @@ fun FlashcardsScreen(
     ) { padding ->
 
         if (currentCard == null) {
+            // END STATE
             Column(
                 modifier = Modifier
                     .fillMaxSize()
@@ -57,6 +56,14 @@ fun FlashcardsScreen(
                 verticalArrangement = Arrangement.SpaceBetween,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
+
+                // PROGRESS
+                Text(
+                    text = "${index + 1} / ${cards.size}",
+                    style = MaterialTheme.typography.bodySmall
+                )
+
+                Spacer(modifier = Modifier.height(12.dp))
 
                 // CARD
                 Card(
@@ -86,27 +93,57 @@ fun FlashcardsScreen(
                     }
                 }
 
+                // ℹHINT
+                if (!isFlipped) {
+                    Text(
+                        text = "Πάτησε για απάντηση",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.padding(top = 8.dp)
+                    )
+                }
 
-                Column(
-                    verticalArrangement = Arrangement.spacedBy(12.dp),
-                    modifier = Modifier.fillMaxWidth()
+                Spacer(modifier = Modifier.height(16.dp))
+
+                // NAVIGATION
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween
                 ) {
+
                     Button(
                         onClick = {
-                            index++
-                            isFlipped = false
+                            if (index > 0) {
+                                index--
+                                isFlipped = false
+                            }
                         },
-                        modifier = Modifier.fillMaxWidth()
+                        enabled = index > 0
+                    ) {
+                        Text("Προηγούμενη")
+                    }
+
+                    Button(
+                        onClick = {
+                            if (index < cards.lastIndex) {
+                                index++
+                                isFlipped = false
+                            }
+                        },
+                        enabled = index < cards.lastIndex
                     ) {
                         Text("Επόμενη")
                     }
+                }
 
-                    OutlinedButton(
-                        onClick = onExit,
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Text("Έξοδος")
-                    }
+                Spacer(modifier = Modifier.height(12.dp))
+
+                //  EXIT
+                OutlinedButton(
+                    onClick = onExit,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Text("Έξοδος")
                 }
             }
         }
