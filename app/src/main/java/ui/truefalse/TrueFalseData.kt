@@ -31,7 +31,7 @@ val trueFalseQuestions = listOf(
         correctAnswer = true
     ),
     TrueFalseQuestion(
-        text = "Η ενθυλάκωση υποδηλώνει ότι οι εσωτερικές λειτουργίες ενός αντικειμένου είναι ορατές στον έξω κόσμο. ΛΑΘΟΣ\n",
+        text = "Η ενθυλάκωση υποδηλώνει ότι οι εσωτερικές λειτουργίες ενός αντικειμένου είναι ορατές στον έξω κόσμο.\n",
         correctAnswer = false
     ),
     TrueFalseQuestion(
