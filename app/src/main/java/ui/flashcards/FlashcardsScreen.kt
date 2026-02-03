@@ -96,7 +96,7 @@ fun FlashcardsScreen(
                 // ℹHINT
                 if (!isFlipped) {
                     Text(
-                        text = "Πατήστε για απάντηση",
+                        text = "Πατήστε στην κάρτα για απάντηση",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.padding(top = 8.dp)
