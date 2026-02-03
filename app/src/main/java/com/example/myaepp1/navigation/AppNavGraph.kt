@@ -47,7 +47,7 @@ fun AppNavGraph() {
             HomeScreen(
                 onTheoryClick = { navController.navigate("theory_menu") },
                 onArraysClick = { navController.navigate("arrays_menu") },
-                onCreatorClick = { navController.navigate("from_creator") },
+                //onCreatorClick = { navController.navigate("from_creator") },
                 onTrueFalseClick = { navController.navigate("true_false") },
                 onFlashcardsClick = { navController.navigate("flashcards") }
             )
@@ -86,9 +86,13 @@ fun AppNavGraph() {
                         navController.navigate("theory_content/$chapterId")
                     }
                 },
+                onExtrasClick = {
+                    navController.navigate("supplement_extras_menu")
+                },
                 onBackClick = { navController.popBackStack() }
             )
         }
+
 
         composable("flashcards") {
             FlashcardsScreen(
@@ -102,9 +106,7 @@ fun AppNavGraph() {
                 onItemClick = { itemId ->
                     navController.navigate("theory_content/supplement_$itemId")
                 },
-                onExtrasClick = {
-                    navController.navigate("supplement_extras_menu")
-                },
+
                 onBackClick = { navController.popBackStack() }
             )
         }

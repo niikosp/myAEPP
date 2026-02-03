@@ -11,7 +11,7 @@ import androidx.compose.ui.unit.dp
 fun HomeScreen(
     onTheoryClick: () -> Unit,
     onArraysClick: () -> Unit,
-    onCreatorClick: () -> Unit,
+
     onTrueFalseClick: () -> Unit,
     onFlashcardsClick: () -> Unit
 
@@ -61,9 +61,7 @@ fun HomeScreen(
             Text("Μεθοδολογίες Πινάκων")
         }
 
-        Button(onClick = { onCreatorClick() }, modifier = Modifier.fillMaxWidth()) {
-            Text("Από τον Δημιουργό")
-        }
+
 
     }
 

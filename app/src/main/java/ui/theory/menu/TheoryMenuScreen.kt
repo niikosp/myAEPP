@@ -11,6 +11,7 @@ import com.example.myaepp1.ui.common.MyTopBar
 @Composable
 fun TheoryMenuScreen(
     onChapterClick: (String) -> Unit,
+    onExtrasClick: () -> Unit,
     onBackClick: () -> Unit
 ) {
     val chapters = listOf(
@@ -46,6 +47,14 @@ fun TheoryMenuScreen(
                 ) {
                     Text(title)
                 }
+
+
+            }
+            Button(
+                onClick = { onExtrasClick() },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Extras")
             }
         }
     }

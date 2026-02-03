@@ -10,7 +10,7 @@ import com.example.myaepp1.ui.common.MyTopBar
 @Composable
 fun SupplementMenuScreen(
     onItemClick: (String) -> Unit,
-    onExtrasClick: () -> Unit,
+
     onBackClick: () -> Unit
 ) {
     val items = listOf(
@@ -46,14 +46,9 @@ fun SupplementMenuScreen(
 
             Spacer(Modifier.height(12.dp))
 
-            Text("Extras", style = MaterialTheme.typography.titleMedium)
 
-            Button(
-                onClick = onExtrasClick,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text("Extras")
-            }
+
+
         }
     }
 }
