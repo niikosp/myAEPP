@@ -162,6 +162,8 @@ fun AppNavGraph() {
                 "supplement_extras_select" -> "extras_select.html"
                 "supplement_extras_modular" -> "extras_modular.html"
                 "supplement_extras_error_categories" -> "extras_error_categories.html"
+                "supplement_extras_oop" -> "extras_oop.html"
+
 
 
 

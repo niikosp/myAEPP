@@ -20,7 +20,8 @@ fun ExtrasMenuScreen(
         "graphs" to "Γράφοι",
         "select" to "Επίλεξε",
         "modular" to "Τμηματικός Προγραμματισμός",
-        "error_categories" to "Κατηγορίες Λαθών"
+        "error_categories" to "Κατηγορίες Λαθών",
+        "oop" to "Αντικειμενοστραφής προγραμματισμός"
     )
 
     Scaffold(
