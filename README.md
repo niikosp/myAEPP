@@ -20,7 +20,7 @@ Observing the challenges she faced with complex concepts and the need for consta
 This project was developed using a modern AI-assisted workflow.
 
 <ol>
-<li>Logic & Backend: Leveraged AI tools (like Gemini/ChatGPT) to generate and optimize Kotlin components, focusing on rapid prototyping and clean code structures.</li>
+<li>Logic: Clean kotlin code structures.</li>
 
 <li>Frontend & UI: Personally designed and implemented the UI using HTML, CSS to ensure a custom user experience tailored to the student's needs.</li>
 
