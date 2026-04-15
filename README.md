@@ -27,5 +27,6 @@ This project was developed using a modern AI-assisted workflow.
 <li>Curation: All educational content and curriculum logic were manually structured to align with the official Greek Ministry of Education (ΑΕΠΠ) standards.</li>
 
 
-The app is avalaible at:
+The apk is avalaible at:
+
 https://drive.google.com/drive/folders/1JLSutvUFDE_I-W4DQu4scAWhDcUvf3Kp?usp=sharing (v. 1.0)
