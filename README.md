@@ -25,6 +25,8 @@ This project was developed using a modern AI-assisted workflow.
 <li>Frontend & UI: Personally designed and implemented the UI using HTML, CSS to ensure a custom user experience tailored to the student's needs.</li>
 
 <li>Curation: All educational content and curriculum logic were manually structured to align with the official Greek Ministry of Education (ΑΕΠΠ) standards.</li>
+</ol>
+
 
 
 The apk is avalaible at:
