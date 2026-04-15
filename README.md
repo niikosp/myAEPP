@@ -17,7 +17,6 @@ Observing the challenges she faced with complex concepts and the need for consta
 
 ## Development process
 
-This project was developed using a modern AI-assisted workflow.
 
 <ol>
 <li>Logic: Clean kotlin code structures.</li>
