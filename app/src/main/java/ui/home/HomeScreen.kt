@@ -13,7 +13,9 @@ fun HomeScreen(
     onArraysClick: () -> Unit,
 
     onTrueFalseClick: () -> Unit,
-    onFlashcardsClick: () -> Unit
+    onFlashcardsClick: () -> Unit,
+
+    onCreatorClick: () -> Unit
 
 ) {
     Column(
@@ -60,6 +62,14 @@ fun HomeScreen(
         ) {
             Text("Μεθοδολογίες Πινάκων")
         }
+
+        Button(
+            onClick = { onCreatorClick()},
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Επικοινωνία")
+        }
+
 
 
 

@@ -47,7 +47,7 @@ fun AppNavGraph() {
             HomeScreen(
                 onTheoryClick = { navController.navigate("theory_menu") },
                 onArraysClick = { navController.navigate("arrays_menu") },
-                //onCreatorClick = { navController.navigate("from_creator") },
+                onCreatorClick = { navController.navigate("from_creator") },
                 onTrueFalseClick = { navController.navigate("true_false") },
                 onFlashcardsClick = { navController.navigate("flashcards") }
             )
@@ -123,7 +123,7 @@ fun AppNavGraph() {
 
         composable("from_creator") {
             TheoryScreen(
-                title = "Από τον Δημιουργό",
+                title = "Επικοινωνία",
                 assetFileName = "from_creator.html",
                 onBackClick = { navController.popBackStack() }
             )
